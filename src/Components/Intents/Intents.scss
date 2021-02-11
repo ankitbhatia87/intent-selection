@@ -1,0 +1,17 @@
+.select-all {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    font-size: 17px;
+    input {
+        height: 18px;
+        width: 18px;
+    }
+}
+
+.intents {
+    width: 992px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

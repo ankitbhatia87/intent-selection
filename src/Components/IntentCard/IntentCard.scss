@@ -1,0 +1,110 @@
+@import '../../Common/sass/variable';
+
+.intent {
+    background: #fff;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    width: 48%;
+    margin-bottom: 24px;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    position: relative;
+    .intent-select {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 15px;
+        width: 15px;
+    }
+    .left-section {
+        width: 50%;
+        border-right: 1px dotted #ccc;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        justify-content: space-around;
+        padding: 10px 20px 10px 0;
+        .title{
+            padding-bottom: 10px;
+            h3 {
+                font-weight: 600;
+                font-size: 20px;
+                color: #0844a7;
+                padding-bottom: 5px;
+            }
+            .description {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+        .expressions {
+            font-size: 14px;
+            margin: 0 0 10px 20px;
+            font-style: italic;
+            list-style: none;
+            li {
+                position: relative;
+                &:before {
+                    content: '.';
+                    position: absolute;
+                    font-size: 35px;
+                    color: #5e71a1;
+                    top: -26px;
+                    left: -10px;
+                }
+            }
+        }
+        .total-expressions {
+            font-style: italic;
+            font-weight: 600;
+            font-size: 14px;
+            &:before {
+                display: none;
+            }
+            span {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+            }
+        }
+    }
+    .right-section {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 0 10px 20px;
+        box-sizing: border-box;
+        p {
+            font-size: 13px;
+        }
+        .bubble {
+            padding: 5px 10px;
+            background: #fff;
+            border: 1px solid #efefef;
+            display: inline-block;
+            border-radius: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .user-expression {
+            max-width: 80%;
+            padding-bottom: 10px;
+            .user-bubble {
+                background: linear-gradient(#f9f9f9, #e0e0e0);
+                border: 1px solid #ccc;
+            }
+        }
+        .ai-reply {
+            align-self: flex-end;
+            width: 80%;
+            .ai-bubble {
+                background: linear-gradient(#f2f5fc, #cad6ee);
+                border: 1px solid #cadcfe;
+            }
+        }
+    }
+}
