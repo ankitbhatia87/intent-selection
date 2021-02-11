@@ -9,7 +9,7 @@
         2. I can also use :root selector to store the values of variables.
   Tests: No Test cases have been written so far.
   API Calls: Its always better to have a separate service file and create a singleton class inside it but since its a dummy application so I have not chosen that path.
-
+  StateManagement: Currently I am managing the state in the parent component, however, for the actual implementation it is better to maintain the state of all the selected intents in a store using Redux and use that state for further steps/processes
 */
 
 import './App.scss';
